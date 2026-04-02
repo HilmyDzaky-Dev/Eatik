@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warna Utama Eatik (Cokelat) -->
+    <color name="primary_eatik">#ba8050</color>
+    <color name="primary_dark_eatik">#8d5a32</color>
+    <color name="primary_light_eatik">#e8d0ae</color>
+
+    <!-- Warna Latar Belakang (Creamy & Clean) -->
+    <color name="bg_screen">#FFFBF7</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="bg_soft_cream">#FDF5E6</color>
+
+    <!-- Warna Teks -->
+    <color name="text_title">#3E2723</color>
+    <color name="text_body">#757575</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Warna Aksen (Biar Gak Monoton) -->
+    <color name="accent_orange">#FF9800</color>
+    <color name="accent_red">#FF5252</color>
+    <color name="accent_green">#4CAF50</color>
+
+    <!-- Warna Earth Tone Aesthetic (Low Contrast) -->
+    <color name="tan_aesthetic">#C29B6D</color>
+    <color name="muted_taupe">#8D8D8D</color>
+    <color name="soft_charcoal">#454545</color>
+
+    <!-- Default Android Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_light">#E0E0E0</color>
+</resources>

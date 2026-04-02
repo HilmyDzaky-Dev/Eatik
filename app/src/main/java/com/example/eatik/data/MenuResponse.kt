@@ -1,0 +1,33 @@
+package com.example.eatik.data
+
+import com.google.gson.annotations.SerializedName
+
+data class MenuResponse(
+
+	@field:SerializedName("MenuResponse")
+	val menuResponse: List<MenuResponseItem>
+)
+
+data class MenuResponseItem(
+
+	@field:SerializedName("nama")
+	val nama: String,
+
+	@field:SerializedName("harga")
+	val harga: Any,
+
+	@field:SerializedName("foto")
+	val foto: String,
+
+	@field:SerializedName("kategori")
+	val kategori: String,
+
+	@field:SerializedName("id")
+	val id: Int,
+
+	@field:SerializedName("deskripsi")
+	val deskripsi: String,
+
+	@field:SerializedName("status")
+	val status: String
+)

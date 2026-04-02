@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Eatik</string>
+
+    // nav header
+    <string name="hilmy">Hilmy</string>
+    <string name="email">myyyy9517@gmailcom</string>
+
+    // tab layout
+    <string name="tab_text_1">Tersedia</string>
+    <string name="tab_text_2">Habis</string>
+
+    // splash activity
+    <string name="splash_title">Eatik Kitchen</string>
+
+    // fragment home
+    <string name="title_home">Home</string>
+    <string name="selamat_datang">Halo, Selamat Datang!</string>
+    <string name="cari_makanan">Cari makanan favoritmu…</string>
+    <string name="daftar_menu">Daftar Menu</string>
+
+    // item menu
+    <string name="nasi_goreng">Nasi Goreng Spesial</string>
+    <string name="makanan">Makanan</string>
+    <string name="tersedia">Tersedia</string>
+    <string name="deskripsi">Deskripsi makanan...</string>
+    <string name="harga">Rp 25.000</string>
+
+    <!-- Bottom Navigation -->
+    <string name="home">Beranda</string>
+    <string name="menu">Menu</string>
+    <string name="profil">Profil</string>
+
+    <!-- Navigation Drawer -->
+    <string name="contact">Kontak Kami</string>
+    <string name="settings">Pengaturan</string>
+    <string name="help">Pusat Bantuan</string>
+
+    <!-- Profile Fragment -->
+    <string name="title_profil">Profil Saya</string>
+    <string name="admin_eatik">Admin Eatik</string>
+    <string name="owner_restaurant">Owner Restaurant</string>
+    <string name="edit_profil">Edit Profil</string>
+    <string name="label_profil">Profil Saya</string>
+    <string name="label_info_lainnya">Informasi &amp; Lainnya</string>
+    <string name="pusat_bantuan">Pusat Bantuan</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="keluar_akun">Keluar Akun</string>
+    <string name="logout_confirm_title">Konfirmasi Keluar</string>
+    <string name="logout_confirm_msg">Apakah kamu yakin ingin keluar dari akun Eatik?</string>
+    <string name="batal">Batal</string>
+    <string name="ya_keluar">Ya, Keluar</string>
+
+    <!-- Home Fragment -->
+    <string name="hapus_menu_title">Hapus Menu</string>
+    <string name="hapus_menu_msg">Yakin mau hapus %1$s?</string>
+    <string name="hapus">Hapus</string>
+
+    <!-- Dialog Edit Menu -->
+    <string name="edit_menu_title">Edit Menu Eatik</string>
+    <string name="nama_menu">Nama Menu</string>
+    <string name="harga_satuan">Harga Satuan</string>
+    <string name="kategori">Kategori</string>
+    <string name="status">Status</string>
+    <string name="deskripsi_singkat">Deskripsi Singkat</string>
+    <string name="simpan">Simpan</string>
+    <string name="ganti_foto">Ganti Foto</string>
+
+    <!-- Contact Fragment -->
+    <string name="hubungi_kami">Hubungi Kami</string>
+    <string name="contact_subtitle">Kami siap melayani pertanyaan dan pesanan Anda setiap hari.</string>
+    <string name="saluran_komunikasi">Saluran Komunikasi</string>
+    <string name="wa_chat">WhatsApp Chat</string>
+    <string name="email_support">Email Support</string>
+    <string name="instagram_handle">Instagram @eatik.kitchen</string>
+    <string name="lokasi_restoran">Lokasi Restoran</string>
+    <string name="alamat_restoran">Jl. Kuliner No. 123, Kota Rasa, Indonesia</string>
+    <string name="lihat_maps">Lihat di Google Maps</string>
+
+    <!-- Help Fragment -->
+    <string name="pusat_bantuan_title">Pusat Bantuan</string>
+    <string name="help_subtitle">Ada yang bisa kami bantu? Cari jawaban atas pertanyaan Anda di sini.</string>
+    <string name="pertanyaan_populer">Pertanyaan Populer</string>
+    <string name="faq_1">Bagaimana cara memesan menu?</string>
+    <string name="faq_2">Apakah menu Habis akan tersedia lagi?</string>
+    <string name="faq_3">Cara mengubah profil saya?</string>
+    <string name="still_need_help">Masih butuh bantuan?</string>
+    <string name="contact_cs">Hubungi Customer Service</string>
+
+    <!-- Settings Fragment -->
+    <string name="settings_subtitle">Atur preferensi akun dan aplikasi Anda di sini.</string>
+    <string name="label_pengaturan_akun">Pengaturan Akun</string>
+    <string name="ganti_kata_sandi">Ganti Kata Sandi</string>
+    <string name="privasi_keamanan">Privasi &amp; Keamanan</string>
+    <string name="label_preferensi_aplikasi">Preferensi Aplikasi</string>
+    <string name="notifikasi">Notifikasi</string>
+    <string name="notifikasi_subtitle">Aktifkan pemberitahuan menu baru</string>
+    <string name="bahasa">Bahasa</string>
+    <string name="bahasa_default">Indonesia</string>
+</resources>
