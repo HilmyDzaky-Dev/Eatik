@@ -49,7 +49,7 @@ class MainViewModel(private val repository: MenuRepository) : ViewModel() {
                     _snackbarText.value = Event("Berhasil menyimpan data!")
                     refresh()
                 } else {
-                    _snackbarText.value = Event("Gagal: ${response.message()}")
+                    _snackbarText.value = Event("Gagal: ${response.code()} ${response.message()}")
                 }
             } catch (e: Exception) {
                 _snackbarText.value = Event("Error: ${e.message}")
@@ -68,7 +68,8 @@ class MainViewModel(private val repository: MenuRepository) : ViewModel() {
                     _snackbarText.value = Event("Data berhasil dihapus")
                     refresh()
                 } else {
-                    _snackbarText.value = Event("Gagal menghapus")
+                    // Tampilkan kode error agar mudah debug (misal 404 atau 405)
+                    _snackbarText.value = Event("Gagal menghapus: ${response.code()} ${response.message()}")
                 }
             } catch (e: Exception) {
                 _snackbarText.value = Event("Error: ${e.message}")

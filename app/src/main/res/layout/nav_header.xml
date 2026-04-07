@@ -6,7 +6,6 @@
     android:layout_height="180dp"
     android:background="#CECACA">
 
-    <!-- ImageView untuk Background Header -->
     <ImageView
         android:id="@+id/iv_header_bg"
         android:layout_width="match_parent"
@@ -17,7 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Overlay gelap biar teks tetep kebaca (Optional) -->
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"

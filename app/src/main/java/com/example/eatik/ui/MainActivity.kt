@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
 import com.bumptech.glide.Glide
 import com.example.eatik.R
@@ -32,6 +33,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
+            // Pastikan Drawer tertutup setiap kali pindah fragment
+            binding.drawerLayout.closeDrawer(GravityCompat.START)
+            
             if (destination.id == R.id.splashActivity) {
                 binding.bottomNav.visibility = View.GONE
                 binding.btnMenu.visibility = View.GONE 
@@ -48,15 +52,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setUpNavigationUI(){
-
+        // 1. Hubungkan Bottom Navigation secara otomatis
         binding.bottomNav.setupWithNavController(navController)
-        binding.navView.setupWithNavController(navController)
 
-        binding.bottomNav.setOnItemSelectedListener { item ->
-            if (navController.currentDestination?.id != item.itemId) {
-                navController.navigate(item.itemId)
+        // 2. Hubungkan Navigation View (Drawer) secara manual agar tidak bentrok dengan BottomNav
+        binding.navView.setNavigationItemSelectedListener { item ->
+            // Gunakan helper NavigationUI untuk pindah fragment berdasarkan ID menu
+            val handled = NavigationUI.onNavDestinationSelected(item, navController)
+            if (handled) {
+                binding.drawerLayout.closeDrawer(GravityCompat.START)
             }
-            true
+            handled
         }
     }
 
@@ -66,14 +72,12 @@ class MainActivity : AppCompatActivity() {
             val ivProfile = headerView.findViewById<ImageView>(R.id.iv_profile)
             val ivBackground = headerView.findViewById<ImageView>(R.id.iv_header_bg)
 
-            // 1. Load Foto Profile (Lingkaran)
             Glide.with(this)
                 .load(profileUrl)
                 .placeholder(R.drawable.ic_profile)
                 .circleCrop()
                 .into(ivProfile)
 
-            // 2. Load Background Header
             Glide.with(this)
                 .load(bgUrl)
                 .centerCrop()
